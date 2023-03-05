@@ -5,14 +5,14 @@
 }
 
 .body {
-    background-color: #f4f4f4;
+    background-color: white;
 }
 
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
-    color: #ffffff;
+    color: white;
 }
 
 .header h1 {
@@ -42,47 +42,48 @@
 }
 
 a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
-}
+/* Removed "p" selector, added custom font sizes to each section. */
+
 /* Replaced "div" with "img" and renamed "image" */
 .image {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("./images/digital-marketing-meeting.jpg");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 /* Replaced "div with "section" and also re-organized CSS list items */
-.content {
+/* Replaced "content" with "services" */
+.services {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
-
-.search-engine-optimization {
+/* Deleted class selectors for each article and replaced with "services-article" selector */
+/* Added "font-size" to services-article selector. */
+.services-article {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
+    font-size: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
-    color: #ffffff;
+    color: white;
 }
-
-.search-engine-optimization img {
+/* Deleted redundant img CSS selectors and replaced with "services-article img" */
+.services-article img {
     max-height: 200px;
 }
-
-.search-engine-optimization h2 {
+/* Deleted redundant h2 CSS selectors and replaced with "services-article h2" */
+.services-article h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
 
 .float-left {
     float: left;
@@ -92,43 +93,6 @@ p {
 .float-right {
     float: right;
     margin-left: 25px;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
 }
 
 .benefits {
@@ -142,53 +106,25 @@ p {
     background-color: #2589bd;
 }
 /* Renamed class selector to "lead-generation" */
-.lead-generation {
+/* Renamed selector to "benefits-article" and deleted redundant CSS code. */
+/* Added font size. */
+.benefits-article {
     margin-bottom: 32px;
-    color: #ffffff;
+    color: white;
+    font-size: 20px;
 }
 
-.lead-generation h3 {
+.benefits-article h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.lead-generation img {
+.benefits-article img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-/* Renamed class selector to "brand-awareness" */
-.brand-awareness {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
 
-.brand-awareness h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.brand-awareness img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-/* Renamed class selector to "cost-management" */
-.cost-management {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.cost-management h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.cost-management img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
 
 .footer {
     padding: 30px;
